@@ -1,0 +1,191 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace TravelCSharp.Models.Dto
+{
+
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
+    public class AssetDetails
+    {
+        public int ID { get; set; }
+        public int CustomerID { get; set; }
+        public object Name { get; set; }
+        public int Type { get; set; }
+        public object TagId { get; set; }
+        public object SiteCode { get; set; }
+        public DateTime Timestamp { get; set; }
+        public int TemperatureTagId { get; set; }
+        public double Temperature { get; set; }
+        public string iButtonID { get; set; }
+        public object LoginPassword { get; set; }
+        public string weekdayAuthorisedStart { get; set; }
+        public string weekdayAuthorisedEnd { get; set; }
+        public string weekendAuthorisedStart { get; set; }
+        public string weekendAuthorisedEnd { get; set; }
+        public object icon { get; set; }
+        public object first_name { get; set; }
+        public object last_name { get; set; }
+        public object address_1 { get; set; }
+        public object address_2 { get; set; }
+        public object address_3 { get; set; }
+        public object address_town { get; set; }
+        public object postcode { get; set; }
+        public object phone { get; set; }
+        public object mobile { get; set; }
+        public object email { get; set; }
+        public double min_temp_threshold { get; set; }
+        public double max_temp_threshold { get; set; }
+        public bool despatch_not_accepting_jobs { get; set; }
+        public int despatch_sinbin_interval { get; set; }
+        public DateTime despatch_sinbin_end_time { get; set; }
+        public bool despatch_accept_contract_jobs { get; set; }
+    }
+
+    public class JourneyDto
+    {
+        public int ID { get; set; }
+        public int ServiceID { get; set; }
+        public DateTime LocalTimeStartDate { get; set; }
+        public DateTime LocalTimeEndDate { get; set; }
+        public string JourneyTimeZone { get; set; }
+        public int AssetID { get; set; }
+        public object Asset { get; set; }
+        public AssetDetails AssetDetails { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime SysProcTime { get; set; }
+        public double StartLat { get; set; }
+        public double StartLong { get; set; }
+        public string StartStreet { get; set; }
+        public string StartTown { get; set; }
+        public string StartCountry { get; set; }
+        public string StartPOI { get; set; }
+        public string StartPostcode { get; set; }
+        public double StartOdometer { get; set; }
+        public DateTime EndDate { get; set; }
+        public double EndLat { get; set; }
+        public double EndLong { get; set; }
+        public string EndStreet { get; set; }
+        public string EndTown { get; set; }
+        public string EndCountry { get; set; }
+        public string EndPOI { get; set; }
+        public string EndPostcode { get; set; }
+        public double EndOdometer { get; set; }
+        public double MaxSpeed { get; set; }
+        public double ReportedMaxSpeed { get; set; }
+        public int RoadSpeedAtMaxSpeed { get; set; }
+        public int Input0HighMessages { get; set; }
+        public int Input0LowMessages { get; set; }
+        public int Input1HighMessages { get; set; }
+        public int Input1LowMessages { get; set; }
+        public int Input2HighMessages { get; set; }
+        public int Input2LowMessages { get; set; }
+        public int Input3HighMessages { get; set; }
+        public int Input3LowMessages { get; set; }
+        public double Distance { get; set; }
+        public double DistanceMeters { get; set; }
+        public int IdleTime { get; set; }
+        public int MaxIdleTime { get; set; }
+        public int Duration { get; set; }
+        public int SpeedingPoints { get; set; }
+        public int AccelPoints { get; set; }
+        public int DecelPoints { get; set; }
+        public int RPMPoints { get; set; }
+        public int OverallPoints { get; set; }
+        public int SpeedingScore { get; set; }
+        public int AccelScore { get; set; }
+        public int DecelScore { get; set; }
+        public int RpmScore { get; set; }
+        public int IdleScore { get; set; }
+        public int OverallScore { get; set; }
+        public int ThreeValueOverallScore { get; set; }
+        public int FourValueOverallScore { get; set; }
+        public int RpmEvents { get; set; }
+        public int RpmMax { get; set; }
+        public int RpmLevel1Count { get; set; }
+        public int RpmLevel2Count { get; set; }
+        public int RpmLevel3Count { get; set; }
+        public int RpmLevel4Count { get; set; }
+        public int RpmLevel5Count { get; set; }
+        public int RpmLevel6Count { get; set; }
+        public int IdlingLongestInstanceTime { get; set; }
+        public int AccelEvents { get; set; }
+        public double AccelMax { get; set; }
+        public int AccelLowCount { get; set; }
+        public int AccelMediumCount { get; set; }
+        public int AccelHighCount { get; set; }
+        public int DecelEvents { get; set; }
+        public double DecelMax { get; set; }
+        public int DecelLowCount { get; set; }
+        public int DecelMediumCount { get; set; }
+        public int DecelHighCount { get; set; }
+        public int SpeedEvents { get; set; }
+        public double SpeedMax { get; set; }
+        public int Speed15Count { get; set; }
+        public int Speed20Count { get; set; }
+        public int Speed30Count { get; set; }
+        public int Speed40Count { get; set; }
+        public int Speed45Count { get; set; }
+        public int Speed50Count { get; set; }
+        public int Speed55Count { get; set; }
+        public int Speed60Count { get; set; }
+        public int Speed65Count { get; set; }
+        public int Speed70Count { get; set; }
+        public int DeadzoneTime { get; set; }
+        public bool IsPrivateMiles { get; set; }
+        public int UrbanDistance { get; set; }
+        public double MaxPossibleMpg { get; set; }
+        public double MPG { get; set; }
+        public double CO2 { get; set; }
+        public int Input0Distance { get; set; }
+        public int Input1Distance { get; set; }
+        public int Input2Distance { get; set; }
+        public int Input3Distance { get; set; }
+        public int Input0Duration { get; set; }
+        public int Input1Duration { get; set; }
+        public int Input2Duration { get; set; }
+        public int Input3Duration { get; set; }
+        public int Input4Duration { get; set; }
+        public int ActionDistance { get; set; }
+        public int ActionDuration { get; set; }
+        public double StartVoltage { get; set; }
+        public double EndVoltage { get; set; }
+        public double WaterUsed { get; set; }
+        public double AreaCleaned { get; set; }
+        public int JourneyType { get; set; }
+        public double StartFuelPercentage { get; set; }
+        public double EndFuelPercentage { get; set; }
+        public double StartFuelLitre { get; set; }
+        public double EndFuelLitre { get; set; }
+        public double TotalFuelUsed { get; set; }
+        public int Idling { get; set; }
+        public int JourneyCount { get; set; }
+        public double Odometer { get; set; }
+        public object DTCCodes { get; set; }
+        public int GritDuration { get; set; }
+        public int GritDistance { get; set; }
+        public int GritUsed { get; set; }
+        public int PloughDuration { get; set; }
+        public int PloughDistance { get; set; }
+        public int DistanceOffset { get; set; }
+        public object JourneyComment { get; set; }
+        public int JourneyDetection { get; set; }
+        public int CanIdleTime { get; set; }
+        public int CanDistance { get; set; }
+        public double StartAdbluePercentage { get; set; }
+        public double EndAdbluePercentage { get; set; }
+        public double StartAdblueLitres { get; set; }
+        public double EndAdblueLitres { get; set; }
+        public double UsedAdBlue { get; set; }
+        public bool TemperatureAlertTriggered { get; set; }
+        public bool PressureAlertTriggered { get; set; }
+        public double MaxTyrePressure { get; set; }
+        public double MinTyrePressure { get; set; }
+        public double MaxTyreTemperature { get; set; }
+        public double MinTyreTemperature { get; set; }
+        public string StartCity2 { get; set; }
+        public string EndCity2 { get; set; }
+    }
+
+}

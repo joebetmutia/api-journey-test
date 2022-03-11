@@ -3,3 +3,6 @@
 ################################################################################
 
 /TravelCSharp/bin
+/TravelCSharp/obj
+/TravelCSharp.Common/bin/Debug
+/TravelCSharp.Common/obj
